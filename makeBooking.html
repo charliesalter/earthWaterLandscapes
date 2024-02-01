@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Earth and Water Landscapes</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/stylemB.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
@@ -29,7 +29,7 @@
         <br /><br /><br />
         <div id="menu">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html" >Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <!--  <li><a href="#">Our Products</a></li> -->
             <li><a href="quote.html">Get a quote</a></li>
@@ -40,7 +40,38 @@
     </div>
   </header>
 
+  
+    
+  <body>
 
+  <section>
+    <h3>Book Pond Maintenance</h3>
+    <form action="submit_booking.php" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="pond-size">Pond Size (in litres):</label>
+      <input type="number" id="pond-size" name="pond_size" required>
+
+      <label for="service-date">Preferred Service Date:</label>
+      <input type="date" id="service-date" name="service_date" required>
+
+      <label for="additional-info">Additional Information:</label>
+      <textarea id="additional-info" name="additional_info" rows="4"></textarea>
+
+      <input type="submit" value="Book Now">
+    </form>
+  </section>
+
+
+
+</body>
 
 
     <!-- Footer Menu -->
