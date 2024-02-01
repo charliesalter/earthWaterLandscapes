@@ -379,10 +379,18 @@ ul.contact li a{
 
    /*backround image Index*/
    
+<<<<<<< HEAD
    .backgroundIndex{
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: 300px 100px;
+=======
+   .body{
+    background-image: url('../images/featurePond.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+>>>>>>> 8bd84cd673b3826e65873ee384505fc1f8c850e9
    }
 
 
@@ -401,12 +409,20 @@ ul.contact li a{
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /* body {
+=======
+body {
+>>>>>>> 8bd84cd673b3826e65873ee384505fc1f8c850e9
   margin: 0;
   font-family: Arial;
   font-size: 17px;
   background-color: #f2f2f2;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 8bd84cd673b3826e65873ee384505fc1f8c850e9
 
 #myVideo {
   position: relative;
