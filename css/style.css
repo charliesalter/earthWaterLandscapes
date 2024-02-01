@@ -379,12 +379,20 @@ ul.contact li a{
 
    /*backround image Index*/
    
-   .body{
+
+   .backgroundIndex{
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 300px 100px;
+   }
+
+   /* .body{
     background-image: url('../images/featurePond.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
-   }
+
+   } */
 
 
 /* container for quote and abut us */
@@ -402,12 +410,7 @@ ul.contact li a{
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-  background-color: #f2f2f2;
-}
+
 
 #myVideo {
   position: relative;
