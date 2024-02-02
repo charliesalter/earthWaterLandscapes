@@ -11,11 +11,11 @@ body {
 
 .jumbotron {
   /* opacity: .65; */
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .container{
   /* opacity: .55; */
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.15);
   /* background-color: beige; */
 }
