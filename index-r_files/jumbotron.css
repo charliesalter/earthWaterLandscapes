@@ -1,4 +1,21 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
   padding-top: 3.5rem;
+
+  background-image: url('../images/featurePond.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  /* opacity: .5; */
+}
+
+.jumbotron {
+  /* opacity: .65; */
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.container{
+  /* opacity: .55; */
+  background-color: rgba(0, 0, 0, 0.55);
+  /* background-color: beige; */
 }

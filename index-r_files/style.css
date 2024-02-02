@@ -1,0 +1,463 @@
+html, body{
+    height: 100%;
+}
+     
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #87d9f1;
+    font-family: 'Roboto';
+    font-size: 12pt;
+}
+         
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+h4{
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  margin-top: 0%;
+  padding-left: 8px;
+}
+h5{
+  color: #000;
+}
+     
+p, ol, ul{
+    margin-top: 0;
+}
+ 
+p {
+    line-height: 180%;
+}
+ 
+ol, ul{
+    padding: 0;
+    list-style: none;
+}
+     
+.container{    
+    /* Set width of container to 
+        1200px and align center */
+    margin: 0px auto;
+    width: 100%;
+}
+
+/*************************/
+/*    Styling  Header    */
+/*************************/
+header{
+     
+overflow: hidden;
+}
+ 
+#top-header{
+         
+    text-align: center;
+    height: 180px;
+    background: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+ 
+/****************/   
+/* Styling Logo */
+/****************/
+#logo{
+    float: left;
+    padding-left: 2px;
+    padding: none;
+    margin: none;
+    height: 100px;
+    width: 150px;
+}
+ 
+#logo img{
+    width: 60%;
+    padding: 10px 0px;
+}    
+ 
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+     
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #000000;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-family: Garamond, serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+#menu li a{
+         
+    color: #ffffff;
+}
+     
+#menu li:hover a, #menu li span{
+    background: #000000;
+    color: #ffffff;
+    border-left: 1px solid #000000;
+    text-decoration: none;
+}
+
+/*****************************/
+/* Styling Header Image Menu */
+/*****************************/
+#header-image-menu{
+    top: 10px;
+    left: 25%;
+    position: relative;
+}
+ 
+#header-image-menu img{
+    width: 30%;
+    margin: none;
+    padding: none;
+}
+ 
+#image-text{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-family: 'Roboto';
+    color: #cccccc;
+    transform: translate(-30%, -30%);
+    text-align: center;
+}
+
+/**********************************/
+/* Styling Main content Section 1 */
+/**********************************/
+#welcome
+{ overflow: hidden;
+	width: 1000px;
+	margin: 0px auto;
+  color: #ffffff;
+}
+		
+#welcome .title{
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+#welcome p{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+/**********************************/
+/* Styling Main content Section 2 */
+/**********************************/
+#section-2{
+	overflow: hidden;
+	margin-top: 5em;
+	padding-top: 1em;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	text-align: center;
+  color: #ffffff;
+}
+/* .row #column1, 
+.row #column2,
+.row #column3{
+		float: left;
+		width: 33.33%;
+		padding: 80px 40px 80px 40px;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column-title h2{
+	margin: 1em 0em;
+	font-size: 1.6em;
+	font-weight: 700;
+}
+.button {
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	background-color: #4CAF50; 
+	color: white; 
+	border: 2px solid #4CAF50;
+	padding: 16px 32px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+	
+.button:hover {
+	background-color: white;
+	color: #4CAF50;
+}
+
+/**********************************/
+/*		 Styling Footer	 */
+/**********************************/
+
+/*** Adding Styles to Company Details ***/
+.company-details{
+    
+	overflow: hidden;
+	padding: 3em 0em;
+	background: #E3F0F7;
+	text-align: center;
+	margin-top: 5em;
+}
+
+#footer #col1,
+#footer #col2,
+#footer #col3{
+	float: left;
+	width: 33.33%;
+	padding: 0px 40px 0px 40px;
+}
+	
+#footer #icon{
+	display: block;
+	margin-bottom: 1em;
+	font-size: 3em;
+}
+
+/*** Adding Styles to Copyright Div ***/
+.copyright
+{
+	overflow: hidden;
+	padding: 3em 0em;
+	border-top: 20px solid rgba(255, 255, 255, 0.08);
+	text-align: center;
+	background: #4CAF50;
+}
+	
+.copyright p
+{
+	letter-spacing: 1px;
+	font-size: 0.90em;
+	color: rgba(255, 255, 255, 0.6);
+}
+	
+.copyright a
+{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* Styling Social Icons */
+ul.contact{
+	margin: 0;
+	padding: 2em 0em 0em 0em;
+	list-style: none;
+}
+	
+ul.contact li{
+	display: inline-block;
+	padding: 0em 0.10em;
+	font-size: 1em;
+}
+
+ul.contact li a{
+	color: #FFF;
+	display: inline-block;
+	background: #4C93B9;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+/*   SLIDESHOW STYLING  */
+
+
+/* body {
+  margin: 0;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slide 10s infinite;
+}
+
+   .slider .slide:nth-child(1) {
+    background-image: url("../images/backyardPondStock.jpg");
+    animation-delay: 0;
+  }
+  
+  .slider .slide:nth-child(2) {
+    background-image: url("../images/backyardPondStock2.jpg");
+    animation-delay: -2s;
+  }
+  
+  .slider .slide:nth-child(3) {
+    background-image: url("../images/featurePond.jpg");
+    animation-delay: -4s;
+  }
+  
+  .slider .slide:nth-child(4) {
+    background-image: url("../images/soniaWaterfall.jpg");
+    animation-delay: -6s;
+  }
+  
+  .slider .slide:nth-child(5) {
+    background-image: url("../images/kathyPond.jpg");
+    animation-delay: -8s;
+  }
+
+  @keyframes slide {
+    0%, 15%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    95% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+   } */
+
+   /*backround image Index*/
+   
+   .body{
+    background-image: url('../images/featurePond.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+   }
+
+
+/* container for quote and abut us */
+
+.quoteAboutContainer{
+  text-align: center;
+  padding: 100px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+}
+
+/* Background Video Portfolio Page */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+  background-color: #f2f2f2;
+}
+
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+width: 24.8%;  min-height: 500px;
+}
+
+.content {
+  position: relative;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+}
+
+/* Styling for quote page */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.quoteContainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.backgroundQuote{
+  background-color: #f2f2f2;
+}
