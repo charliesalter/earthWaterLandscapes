@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Earth and Water Landscapes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -11,37 +12,52 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+    <style>
+      /* Define a fluid grid layout */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .column {
+        flex: 1;
+        padding: 10px;
+      }
+
+      /* Define different styles for different screen sizes */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+        }
+      }
+    </style>
   </head>
 
-  <!-- Header Menu of the Page -->
-  <header class="container">
-    <!-- Top header menu containing
-                 logo and Navigation bar -->
-    <div id="top-header">
-      <!-- Logo -->
-      <div id="logo">
-        <img src="images/earthWaterLogoNoText.jpg" />
-        <h4>Earth and Water Landscaping Services</h4>
-      </div>
-      <!-- Navigation Menu -->
-      <nav>
-        <br /><br /><br />
-        <div id="menu">
-          <ul>
-            <li class="active"><a href="index.html" >Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <!--  <li><a href="#">Our Products</a></li> -->
-            <li><a href="quote.html">Get a quote</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-
   <body class="body">
+    <header class="container">
+      <!-- Top header menu containing logo and Navigation bar -->
+      <div id="top-header">
+        <!-- Logo -->
+        <div id="logo">
+          <img src="images/earthWaterLogoNoText.jpg" />
+          <h4>Earth and Water Landscaping Services</h4>
+        </div>
+        <!-- Navigation Menu -->
+        <nav>
+          <br /><br /><br />
+          <div id="menu">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <!--  <li><a href="#">Our Products</a></li> -->
+              <li><a href="quote.html">Get a quote</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
     <main>
       <div id="welcome">
         <h1 class="title">Welcome to Earth and Water Landscapes</h1>
@@ -52,7 +68,6 @@
           aesthetics, and sustainability. Discover a world where innovation
           meets tranquility in our tailored designs that inspire and rejuvenate.
         </p>
-
       </div>
     </main>
 
@@ -93,7 +108,7 @@
           <div class="column-title">
             <h2>Our Services</h2>
           </div>
-          <p>
+<p>
            We offer a wide variety of above and below
             <br />ground landscaping soloutions.
           </p>
