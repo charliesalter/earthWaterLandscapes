@@ -22,7 +22,7 @@ h4{
   padding-left: 8px;
 }
 h5{
-  color: #000;
+  color: #000000;
 }
      
 p, ol, ul{
@@ -31,6 +31,7 @@ p, ol, ul{
  
 p {
     line-height: 180%;
+    color: #ffffff;
 }
  
 ol, ul{
@@ -152,7 +153,8 @@ overflow: hidden;
 /* Styling Main content Section 1 */
 /**********************************/
 #welcome
-{ overflow: hidden;
+{ 
+  overflow: hidden;
 	width: 1000px;
 	margin: 0px auto;
   color: #ffffff;
@@ -252,9 +254,14 @@ overflow: hidden;
 	margin-top: 5em;
 }
 
+#footer{
+  position: sticky;
+}
+
 #footer #col1,
 #footer #col2,
 #footer #col3{
+  
 	float: left;
 	width: 33.33%;
 	padding: 0px 40px 0px 40px;
@@ -386,6 +393,21 @@ ul.contact li a{
     background-size: cover;
    }
 
+  
+  div.transbox {
+    margin-inline: 25%;
+    margin-top: 5%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
 
 /* container for quote and abut us */
 
