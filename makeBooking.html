@@ -12,6 +12,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- for empty photo upload submission -->
+    <script>
+      function validateForm() {
+        var x = document.forms["myForm"]["filename"].value;
+        if (x == "" || x == null) {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+    </script>
   </head>
 
   <!-- Header Menu of the Page -->
@@ -29,7 +40,7 @@
         <br /><br /><br />
         <div id="menu">
           <ul>
-            <li class="active"><a href="index.html" >Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <!--  <li><a href="#">Our Products</a></li> -->
             <li><a href="quote.html">Get a quote</a></li>
@@ -40,41 +51,43 @@
     </div>
   </header>
 
-  
-    
   <body class="body">
+    <section>
+      <div class="transbox">
+      <h3>Book Pond Maintenance</h3>
+      <form action="submit_booking.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
 
-  <section>
-    <h3>Book Pond Maintenance</h3>
-    <form action="submit_booking.php" method="post">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required>
+        <label for="pond-size">Pond Size (in litres):</label>
+        <input type="number" id="pond-size" name="pond_size" required />
 
-      <label for="pond-size">Pond Size (in litres):</label>
-      <input type="number" id="pond-size" name="pond_size" required>
+        <label for="service-date">Preferred Service Date:</label>
+        <input type="date" id="service-date" name="service_date" required />
 
-      <label for="service-date">Preferred Service Date:</label>
-      <input type="date" id="service-date" name="service_date" required>
+        <label for="additional-info">Additional Information:</label>
+        <textarea
+          id="additional-info"
+          name="additional_info"
+          rows="4"
+        ></textarea>
 
-      <label for="additional-info">Additional Information:</label>
-      <textarea id="additional-info" name="additional_info" rows="4"></textarea>
+        <label for="myFile">Click on the "Choose File" button to upload a photo of your pond:</label>
+        <input type="file" id="myFile" name="filename" required />
 
-      <input type="submit" value="Book Now">
-    </form>
-  </section>
+        <input type="submit" value="Book Now" />
+      </form>
+    </div>
+    </section>
+  </body>
 
-
-
-</body>
-
-
-    <!-- Footer Menu -->
+  <!-- Footer Menu -->
   <footer id="footer">
     <!-- Company Details -->
     <!-- 1. Address
@@ -84,14 +97,11 @@
     <div class="company-details">
       <div class="row">
         <div id="col1">
-            <span id="icon" >
-              <a href="https://www.google.com/maps" class="fa fa-map-marker"></a>
+          <span id="icon">
+            <a href="https://www.google.com/maps" class="fa fa-map-marker"></a>
           </span>
 
-          <span>
-            11 Glen St, Aspendale,
-            Victoria, Australia
-          </span>
+          <span> 11 Glen St, Aspendale, Victoria, Australia </span>
         </div>
 
         <div id="col2">
@@ -103,10 +113,12 @@
         </div>
 
         <div id="col3">
-          <span id="icon" >
-          <a href="mailto:Earthandwaterlandscapes@gmail.com" class="fa fa-envelope"></a>
-       
-        </span>
+          <span id="icon">
+            <a
+              href="mailto:Earthandwaterlandscapes@gmail.com"
+              class="fa fa-envelope"
+            ></a>
+          </span>
           <span>Earthandwaterlandscapes@gmail.com</span>
         </div>
       </div>

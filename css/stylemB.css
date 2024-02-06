@@ -387,44 +387,6 @@ ul.contact li a{
    }
 
 
-/* container for quote and abut us */
-
-.quoteAboutContainer{
-  text-align: center;
-  padding: 100px;
-  font-family: "Times New Roman", Times, serif;
-  color: #ffffff;
-}
-
-/* Background Video Portfolio Page */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-  background-color: #f2f2f2;
-}
-
-#myVideo {
-  position: relative;
-  right: 0;
-  bottom: 0;
-width: 24.8%;  min-height: 500px;
-}
-
-.content {
-  position: relative;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 0px;
-}
-
 /* Styling for quote page */
 
 input[type=text], select {
@@ -475,7 +437,7 @@ body, label, input, textarea, form {
   } */
   
 
-  
+/*   
   section {
     max-width: 600px;
     margin: 20px auto;
@@ -483,7 +445,7 @@ body, label, input, textarea, form {
     border: 1px solid #ccc;
     border-radius: 8px;
   }
-  
+   */
   form {
     display: grid;
     gap: 10px;
@@ -491,6 +453,7 @@ body, label, input, textarea, form {
   
   label {
     font-weight: bold;
+    color: white;
   }
   
   input[type="text"],
@@ -498,12 +461,14 @@ body, label, input, textarea, form {
   input[type="tel"],
   input[type="number"],
   input[type="date"],
+  input[type="myFile"],
   textarea {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    color: white;
   }
   
   input[type="submit"] {
@@ -519,7 +484,14 @@ body, label, input, textarea, form {
     background-color: #2980b9;
   }
   
-
+  div.transbox {
+    margin-inline: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    
+  }
   
   /* Responsive styles */
   @media screen and (max-width: 600px) {
