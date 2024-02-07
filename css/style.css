@@ -397,7 +397,7 @@ ul.contact li a{
   div.transbox {
     margin-inline: 25%;
     margin-top: 5%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     border: 1px solid black;
     
   }
@@ -408,6 +408,12 @@ ul.contact li a{
     color: #ffffff;
   }
   
+  div.transbox h2,h3 {
+    margin: 5%;
+    font-weight: bold;
+    font-size: x-large;
+    color: #f8d1d1;
+  }
 
 /* container for quote and abut us */
 
@@ -415,6 +421,7 @@ ul.contact li a{
   text-align: center;
   padding: 100px;
   font-family: "Times New Roman", Times, serif;
+  font-size: larger;
   color: #ffffff;
 }
 

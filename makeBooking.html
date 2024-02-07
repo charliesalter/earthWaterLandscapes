@@ -54,37 +54,52 @@
   <body class="body">
     <section>
       <div class="transbox">
-      <h3>Book Pond Maintenance</h3>
-      <form action="submit_booking.php" method="post">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required />
+        <br>
+        <div class="marginTransbox">
+        <h1>Book Pond Maintenance</h1> 
+        <br>
+        <form action="submit_booking.php" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required />
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
 
-        <label for="pond-size">Pond Size (in litres):</label>
-        <input type="number" id="pond-size" name="pond_size" required />
+          <label for="pond-size">Pond Size (in litres):</label>
+          <input type="number" id="pond-size" name="pond_size" required />
 
-        <label for="service-date">Preferred Service Date:</label>
-        <input type="date" id="service-date" name="service_date" required />
+          <label for="service-date">Preferred Service Date:</label>
+          <input type="date" id="service-date" name="service_date" required />
 
-        <label for="additional-info">Additional Information:</label>
-        <textarea
-          id="additional-info"
-          name="additional_info"
-          rows="4"
-        ></textarea>
+          <label for="additional-info">Additional Information:</label>
+          <textarea
+            id="additional-info"
+            name="additional_info"
+            rows="4"
+          ></textarea>
 
-        <label for="myFile">Click on the "Choose File" button to upload a photo of your pond:</label>
-        <input type="file" id="myFile" name="filename" required />
+          <label for="myFile"
+            >Click on the "Choose File" button to upload one or more photos of
+            your pond:</label
+          >
+          <input type="file" id="myFile" name="myFile" multiple/>
 
-        <input type="submit" value="Book Now" />
-      </form>
-    </div>
+          <input type="submit" value="Book Now" />
+        </form>
+      </div>
+      </div>
     </section>
+
+<section class="calendarDiv">
+<h1> Availability</h1>
+
+  <iframe src="https://calendar.google.com/calendar/embed?src=charlie.john.salter%40gmail.com&ctz=Australia%2FHobart" style="border: 0" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+
+</section>
+
   </body>
 
   <!-- Footer Menu -->

@@ -13,7 +13,7 @@ body{
 h1, h2, h3{
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #000000;
 }
 h4{
   font-family: "Times New Roman", Times, serif;
@@ -261,6 +261,7 @@ overflow: hidden;
 }
 	
 #footer #icon{
+  position: fixed;
 	display: block;
 	margin-bottom: 1em;
 	font-size: 3em;
@@ -453,7 +454,7 @@ body, label, input, textarea, form {
   
   label {
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   input[type="text"],
@@ -463,16 +464,18 @@ body, label, input, textarea, form {
   input[type="date"],
   input[type="myFile"],
   textarea {
-    width: 100%;
+    width: 80%;
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-    color: white;
+    color: rgb(0, 0, 0,1);
   }
   
   input[type="submit"] {
-    background-color: #3498db;
+    width: 80%;
+    margin-bottom: 5%;
+    background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -481,16 +484,20 @@ body, label, input, textarea, form {
   }
   
   input[type="submit"]:hover {
-    background-color: #2980b9;
+    background-color: #45a049;
   }
   
   div.transbox {
     margin-inline: 25%;
     margin-top: 5%;
     margin-bottom: 5%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.486);
     border: 1px solid black;
-    
+  }
+
+  .marginTransbox
+  {
+    margin-left: 15%;
   }
   
   /* Responsive styles */
@@ -499,3 +506,10 @@ body, label, input, textarea, form {
       margin: 10px;
     }
   }
+
+  .calendarDiv
+  {
+    width: 50%;
+    margin-left: 25%;
+
+ }
